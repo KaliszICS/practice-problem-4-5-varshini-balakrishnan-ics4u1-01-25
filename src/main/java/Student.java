@@ -12,7 +12,7 @@ class Student {
         return this.name;
     }
     public string getAge() {
-        return this.age
+        return this.age;
     }
     public string getStudentNumber() {
         return this.studentNumber;
