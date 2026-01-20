@@ -23,6 +23,7 @@ class Cow {
         return this.name + ", " + this.age + " - " + this.weight;
     }
     public boolean equals(Object obj) {
+        if (obj == null || getClass() != obj.getClass()) return false;
         Cow cow = (Cow)obj;
         return cow.getName().equals(this.name) && cow.getAge() == this.age && cow.getWeight() == this.weight;
     }

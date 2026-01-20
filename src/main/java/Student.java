@@ -23,6 +23,7 @@ class Student {
     }
     @Override
     public boolean equals(Object obj) {
+        if (obj == null || getClass() != obj.getClass()) return false;
         Student student = (Student)obj;
         return student.getStudentNumber().equals(this.studentNumber);
     }
