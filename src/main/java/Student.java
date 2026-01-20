@@ -1,9 +1,9 @@
 class Student {
     private String name;
     private int age;
-    private int studentNumber;
+    private String studentNumber;
 
-    public Student(String name, int age, int studentNumber) {
+    public Student(String name, int age, String studentNumber) {
         this.name = name;
         this.age = age;
         this.studentNumber = studentNumber;
@@ -14,7 +14,7 @@ class Student {
     public int getAge() {
         return this.age;
     }
-    public int getStudentNumber() {
+    public String getStudentNumber() {
         return this.studentNumber;
     }
     @Override
@@ -24,6 +24,6 @@ class Student {
     @Override
     public boolean equals(Object obj) {
         Student student = (Student)obj;
-        return student.getStudentNumber() == this.studentNumber;
+        return student.getStudentNumber().equals(this.studentNumber);
     }
 }
