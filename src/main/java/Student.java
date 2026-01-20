@@ -8,13 +8,13 @@ class Student {
         this.age = age;
         this.studentNumber = studentNumber;
     }
-    public string getName() {
+    public String getName() {
         return this.name;
     }
-    public string getAge() {
+    public int getAge() {
         return this.age;
     }
-    public string getStudentNumber() {
+    public int getStudentNumber() {
         return this.studentNumber;
     }
     @Override
